@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger - Precios en COP</title>
+  <link rel="shortcut icon" type="image" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <!-- fonts links -->
+</head>
+<body>
+  <!-- home section -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo"><img src="./images/logo.png" alt="" width="30px">BUR<span>GER</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="first-child">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#burger">Burger</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Otros
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffc800;">
+              <li><a class="dropdown-item" href="#top-icons">Pizza</a></li>
+              <li><a class="dropdown-item" href="#top-icons">Papas</a></li>
+              <li><a class="dropdown-item" href="#top-icons">Pollo Frito</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+        
+        <form class="d-flex">
+          <div class="icons">
+            <i class="fa-regular fa-user"></i>
+            <div class="carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="contar-pro">0</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <table class="table list-cart ocultar">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Imagen</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- aqui va la info del producto-->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" class="text-center">
+            <a href="cart.html" class="btn-cart btn btn-primary">Ver Carrito</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </nav>
+  <div id="Home" class="home-section">
+    <!-- home content -->
+    <section class="home">
+      <div class="content">
+        <h1>Super Deliciosa
+          <br> <span>Hamburguesa</span>
+        </h1>
+        <p>¡La mejor hamburguesa de Colombia con ingredientes frescos y sabor incomparable!</p>
+        <div id="btn"><button>Pedir Ahora</button> <span>432400</span></div>
+      </div>
+      <div class="img">
+        <img src="./images/burger.png" alt="">
+      </div>
+    </section>
+    <!-- home content -->
+  </div>
+  <!-- home section -->
+
+  <!-- top icons -->
+  <div class="container" id="top-icons">
+    <h1>OFERTAS</h1>
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <i><img src="./images/offer1.png" alt=""></i>
+        <h3>Hamburguesa 50% descuento</h3>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i><img src="./images/offer2.png" alt=""></i>
+        <h3>Domicilio Gratis</h3>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i><img src="./images/offer3.png" alt=""></i>
+        <h3>Hamburguesa con papas gratis</h3>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i><img src="./images/offer4.png" alt=""></i>
+        <h3>Hamburguesa con bebida fría gratis</h3>
+      </div>
+    </div>
+  </div>
+  <!-- top icons -->
+
+  <!-- cards -->
+  <div class="container" id="cards">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/cards1.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Hamburguesa</h3>
+            <p>Deliciosa hamburguesa artesanal.</p>
+            <button id="rn">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/cards2.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Pizza</h3>
+            <p>Pizza italiana con ingredientes frescos.</p>
+            <button id="rn">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/cards3.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Pizza Italiana</h3>
+            <p>Auténtica pizza italiana.</p>
+            <button id="rn">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/cards4.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Pollo Frito</h3>
+            <p>Pollo crujiente y jugoso.</p>
+            <button id="rn">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/cards5.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Hamburguesa con Queso</h3>
+            <p>Hamburguesa con queso derretido.</p>
+            <button id="rn">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards -->
+
+  <!-- burger -->
+  <div class="container" id="burger">
+    <h1>Hamburguesas Deliciosas</h1>
+    <div class="row content-pro" style="margin-top: 30px;">
+      <!-- aqui van los productos-->
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b1.png" alt="">
+          <div class="card-body">
+            <h3>Pizza Italiana</h3>
+            <p>Auténtica pizza italiana con ingredientes frescos.</p>
+            <h5>27963 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b2.png" alt="">
+          <div class="card-body">
+            <h3>Pollo Frito</h3>
+            <p>Pollo crujiente y dorado a la perfección.</p>
+            <h5>87331 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b3.png" alt="">
+          <div class="card-body">
+            <h3>Papas Sabrosas</h3>
+            <p>Papas fritas crujientes y doradas.</p>
+            <h5>5162 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b4.png" alt="">
+          <div class="card-body">
+            <h3>Porción de Pizza</h3>
+            <p>Deliciosa porción de pizza individual.</p>
+            <h5>13766 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b5.png" alt="">
+          <div class="card-body">
+            <h3>Pizza Italiana</h3>
+            <p>Auténtica pizza italiana con ingredientes frescos.</p>
+            <h5>27963 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b6.png" alt="">
+          <div class="card-body">
+            <h3>Pollo Frito</h3>
+            <p>Pollo crujiente y dorado a la perfección.</p>
+            <h5>87331 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b7.png" alt="">
+          <div class="card-body">
+            <h3>Papas Sabrosas</h3>
+            <p>Papas fritas crujientes y doradas.</p>
+            <h5>5162 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/b8.png" alt="">
+          <div class="card-body">
+            <h3>Porción de Pizza</h3>
+            <p>Deliciosa porción de pizza individual.</p>
+            <h5>13766 <span class="btn-product"><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- burger -->
+
+  <!-- banner -->
+  <div class="banner">
+    <h3>Otros Productos</h3>
+    <p>Descubre nuestra variedad de productos deliciosos para todos los gustos.</p>
+    <button id="btnorder">Pedir Ahora</button>
+  </div>
+  <!-- banner -->
+
+  <!-- top cards -->
+  <div class="container" id="topcards">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/topcard1.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/topcard2.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/topcard3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top cards -->
+
+  <!-- burger -->
+  <div class="container" id="burger">
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/p1.png" alt="">
+          <div class="card-body">
+            <h3>Pizza Italiana</h3>
+            <p>Auténtica pizza italiana con ingredientes frescos.</p>
+            <h5>27963 <span><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/p2.png" alt="">
+          <div class="card-body">
+            <h3>Pollo Frito</h3>
+            <p>Pollo crujiente y dorado a la perfección.</p>
+            <h5>87331 <span><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/p3.png" alt="">
+          <div class="card-body">
+            <h3>Papas Sabrosas</h3>
+            <p>Papas fritas crujientes y doradas.</p>
+            <h5>5162 <span><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/p4.png" alt="">
+          <div class="card-body">
+            <h3>Porción de Pizza</h3>
+            <p>Deliciosa porción de pizza individual.</p>
+            <h5>13766 <span><i class="fa-solid fa-basket-shopping"></i></span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div class="container" id="about">
+    <h1>NOSOTROS</h1>
+    <div class="row">
+     <div class="col-md-6 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/about.png" alt="">
+      </div>
+     </div>
+     <div class="col-md-6 py-3 py-md-0">
+      <h2>Hamburguesas Deliciosas</h2>
+      <p>Somos una empresa colombiana especializada en la preparación de hamburguesas artesanales con ingredientes frescos y de la mejor calidad. Nuestro compromiso es brindar a nuestros clientes una experiencia gastronómica única, combinando sabores tradicionales con técnicas culinarias modernas. Desde nuestros inicios, hemos trabajado incansablemente para crear el equilibrio perfecto entre calidad, sabor y precio, ofreciendo productos que satisfacen los paladares más exigentes. Nuestro equipo de chefs especializados selecciona cuidadosamente cada ingrediente, garantizando frescura y autenticidad en cada bocado. Además de nuestras famosas hamburguesas, ofrecemos una variedad de acompañamientos como papas artesanales, pizzas y pollo frito, todos preparados con el mismo nivel de excelencia.</p>
+      <div id="readmorebtn"><button>Leer Más...</button></div>
+     </div>
+    </div>
+  </div>
+  <!-- about -->
+
+  <!-- contact -->
+  <div class="container">
+    <h2 id="h2">CONTACTO</h2>
+  </div>
+    <div class="container" id="contact">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+         <h3>CONTACTO</h3>
+         <p>¿Tienes alguna pregunta o quieres realizar un pedido especial? ¡Contáctanos!</p>
+         <input type="text" placeholder="Nombre"><br>
+         <input type="email" placeholder="Email"><br>
+         <input type="number" placeholder="Teléfono"><br>
+         <button id="btnmessage">Enviar</button>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <h3>INFORMACIÓN</h3>
+        <p>Estamos ubicados en Colombia y ofrecemos servicio de domicilio en toda la ciudad.</p>
+        <i class="fas fa-phone"> <span>+57 300 123 4567</span></i><br>
+        <i class="fa-solid fa-envelope"> <span>pedidos@burger.com.co</span></i><br>
+        <i class="fa-solid fa-location-dot"> <span>Medellín, Antioquia, Colombia</span></i><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+
+  <!-- footer -->
+  <footer id="footer" style="margin-top: 50px;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a class="navbar-brand" href="#" id="logo2"><img src="./images/logo.png" alt="" width="30px">Burger</a>
+            <p>Las mejores hamburguesas de Colombia, hechas con amor y dedicación.</p><br>
+            <p>
+              Medellín <br><br>
+              Antioquia <br><br>
+              Colombia <br><br>
+            </p>
+            <strong><i class="fa-solid fa-phone"></i> Teléfono: <strong>+57 300 123 4567</strong></strong><br>
+            <strong><i class="fa-solid fa-envelope"></i> Email: <strong>pedidos@burger.com.co</strong></strong>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlaces Útiles</h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nuestros Servicios</h4>
+            <p>Ofrecemos la mejor comida rápida de Colombia con ingredientes frescos y naturales.</p>
+            <ul>
+              <li><a href="#">Pizza</a></li>
+              <li><a href="#">Pollo frito</a></li>
+              <li><a href="#">Papas</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Redes Sociales</h4>
+            <p>Síguenos en nuestras redes sociales para conocer nuestras promociones y novedades.</p>
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <hr>
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong>Burger Colombia</strong>. Todos los derechos reservados
+    </div>
+    <div class="credits">
+      Diseñado por <a href="#">Burger Team</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Panel del carrito -->
+<div id="cart-panel" class="cart-panel ocultar">
+  <h5><i class="fa-solid fa-shopping-cart"></i> Carrito de Compras</h5>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <thead style="background-color: #ffc800; color: white;">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Imagen</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Los productos se cargarán dinámicamente aquí -->
+      </tbody>
+    </table>
+  </div>
+  <div class="text-center mt-3">
+    <a href="cart.html" class="btn btn-warning btn-sm me-2">
+      <i class="fa-solid fa-eye"></i> Ver Carrito Completo
+    </a>
+    <button class="btn btn-danger btn-sm" onclick="cart.clearCart()">
+      <i class="fa-solid fa-trash"></i> Limpiar Carrito
+    </button>
+  </div>
+</div>
+
+
+  <a href="#" class="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!--archivo de carrito-->
+  <script src="js/carrito.js"></script>
+</body>
+</html>
