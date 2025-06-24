@@ -55,9 +55,5 @@ archivos-plantilla/
 - HTML5, CSS3 (con Bootstrap y fuentes de Google)
 - JavaScript (manejo de DOM, eventos y almacenamiento local)
 
-## Créditos
-- Diseño base: SA coding
-- Adaptación y lógica de carrito/checkout: [Tu nombre o equipo]
-
 ## Licencia
 Este proyecto es de uso libre para fines educativos y personales. Puedes modificarlo y adaptarlo según tus necesidades.
